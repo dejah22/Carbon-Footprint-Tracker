@@ -31,3 +31,11 @@ Tested and documented entirely (in [here]()), using appropriate UML diagrams, an
 The detailed SRS document for the entire application can be found in [SRS Document.pdf](), elaborating the development process and testing. Please copy the path of this file and paste in your browser to access it.
 
 I also thank my friends Adithi Shankar and Aishwarya Krishnakumar for working with me on this project. :)
+
+## A glance 
+<div style="text-align: center;">
+<img src="screenshots/home-page.png" alt="Home Page" width="95%"/>
+<img src="screenshots/sign-up.png" alt="Sign Up Screen" width="95%"/>
+<img src="screenshots/user-login.png" alt="Login Screen" width="95%"/>
+<img src="screenshots/food-tracker.png" alt="Entering activity" width="95%"/>
+</div>
