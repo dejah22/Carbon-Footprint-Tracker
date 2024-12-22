@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UserLogin</title>
+	<style>
+        html *
+        {
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            font-size: 18px;
+        
+        }
+		body {
+
+			background-color: rgb(0, 0, 0);
+            background-repeat: no-repeat;
+			color: #ffffff;
+		}
+		
+    .container {
+      display: flex;
+    }
+
+    .column {
+      flex: 1;
+      padding: 20px;
+    }
+
+      .fade-in {
+        opacity: 0;
+        transition: opacity 3s ease-in-out;
+      }
+
+      /* Change the opacity of the text to 1 when it becomes visible */
+    .fade-in.visible {
+        opacity: 1;
+    }
+		
+    img1 {
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+		.button-container {
+			display: flex;
+			justify-content: center;
+		}
+		
+		input[type="submit"] {
+			background-color: #6ae56a;
+			color: #010000;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+			margin-right: 10px;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #000600;
+            color:rgb(255, 251, 251);
+			transition: background-color 0.3s ease-in-out;
+		}
+
+        .containerf {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		label, input {
+			margin-bottom: 10px;
+		}
+		button {
+			margin-top: 10px;
+		}
+
+    .emerge {
+        opacity: 0;
+        animation: emerge-text 2s ease forwards;
+      }
+      
+      @keyframes emerge-text {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    
+
+
+	</style>
+</head>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+/>
+<body>
+
+    <div class="emerge">
+
+    <div class="column">
+
+        <div class="container">
+        <div class="img1">
+            <img src="ul1.jpg" style="height: 500px; width:600px;margin-right: 100px;">
+       </div>
+
+       <div class="container">
+            <i  class="fa-solid fa-person" style="font-size: 50px; margin-top: 12%;" ></i>
+            <div>
+		    <p style="font-size: 45px; font-weight: bold;color: #6ae56a;">&nbsp&nbsp&nbsp USER LOGIN<p>
+                <div class="containerf">
+            <form action="UserLoginServlet" method="POST">
+                <label for="username">Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <input type="text" id="email" name="email" required> <br><br>
+                <label for="password">Password:&nbsp&nbsp&nbsp</label>
+                <input type="password" id="password" name="password" required> <br><br>
+                <input type="submit" formaction="homepage.html" value="Login" ><br><br><br><br>
+            </form>
+
+
+            <div class="container">
+                <br><br>
+            <i class="fa-solid fa-shoe-prints"  style="font-size: 40px;color:#6ae56a"></i>
+
+            <p>&nbsp&nbsp&nbspTake the first step here, 
+                <a href ="register.html"  style="color:#6ae56a"> Sign up now !!</a>
+        </div>
+        </div>
+      </div>
+
+      
+     </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<html>
+<head>
+	<title>Home</title>
+
+    <style>
+        html *
+       {
+           font-family: "Comic Sans MS", "Comic Sans", cursive;
+           font-size: 24px;
+           font-weight: 800;
+       }
+       body {
+           background-image: url("h4.png");
+           background-repeat: no-repeat;
+           background-size: cover;
+           color: #000000;
+       }
+
+       nav {
+           background-color: rgba(0, 0, 0, 0.838);
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 50px;
+           z-index: 1;
+           overflow: hidden;
+       }
+       
+       nav a {
+           float: right;
+           display: block;
+           color: white;
+           text-align: center;
+           padding: 14px 16px;
+           text-decoration: none;
+           font-size: 20px;
+       }
+       
+       nav a:hover {
+           background-color: #6ae56a;
+           color: black;
+           border-bottom: 7px #6ae56a !important;
+           border-radius: 0px !important;
+       }
+
+       nav a.active {
+        color: rgb(0, 0, 0);
+        background-color: #6ae56a;
+        border-bottom: 2px #6ae56a !important;
+        border-radius: 0px !important;
+        }
+
+       
+       .container {
+           margin-top: 50px;
+           padding: 20px;
+           text-align: center;
+       }
+
+       .box {
+            background-color: #fffefe9d;
+			margin-right: 0;
+			margin: 0 ;
+            margin-top: 8%;
+            width:500px;
+            height:500px;
+            margin-left: 32%;
+            text-align: center;
+       }
+
+
+       .emerge {
+       opacity: 0;
+       animation: emerge-text 2s ease forwards;
+     }
+     
+     @keyframes emerge-text {
+       from {
+         opacity: 0;
+         transform: translateY(20px);
+       }
+       to {
+         opacity: 1;
+         transform: translateY(0);
+       }
+     }
+
+     .button-container {
+			display: flex;
+			justify-content: center;
+		}
+		
+		input[type="submit"] {
+			background-color: #000000;
+			color: #ffffff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+			margin-right: 10px;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #6ae56a;
+            color:rgb(255, 251, 251);
+			transition: background-color 0.3s ease-in-out;
+		}
+
+
+   </style>
+
+</head>
+<body>
+
+    <nav>
+                <a href="index.html">Back to HomePage</a>
+		<a class="active" href="home.html">Home</a>
+		<a href="travel.html">Travel</a>
+		<a href="food.html">Food</a>
+	</nav>
+
+    <div class="emerge">
+        <div class="box">
+            <b><p style="font-size: 40px;">HOME LOG </p></b>
+
+	<form method="post" action="HomeServlet" onsubmit = "msg()">
+
+          <div>
+            <label for="slider1">Electricity:</label>
+            <input id="slider1" name ="slider1" type="range" min="0" max="50" value="25" oninput="showValue(this)">
+            <span id="sliderValue1"></span>
+          </div>
+
+          <br>
+
+          <div>
+            <label for="slider2">Water:</label>
+            <input id="slider2" name ="slider2" type="range" min="0" max="100" value="50" oninput="showValue(this)">
+            <span id="sliderValue2"></span>
+          </div>
+
+          <br>
+
+          <div>
+            <label for="slider3">Gas:</label>
+            <input id="slider3" name ="slider3" type="range" min="0" max="50" value="25" oninput="showValue(this)">
+            <span id="sliderValue3"></span>
+          </div>
+
+          <br>
+          <br>
+
+
+		
+		<input type = "submit" value = "Submit"/>
+	</form>
+
+        
+        <form method="post" action="ViewServlet">
+            <input type = "submit" value = "View Stats"/>
+        </form>
+
+
+
+        </div>
+        </div>
+</body>
+<script>
+function showValue(slider) {
+    var value = slider.value;
+    var sliderValue = document.getElementById("sliderValue" + slider.id.slice(-1));
+    sliderValue.innerHTML = value+" units ";
+  }
+  function msg()
+  {
+      alert("Submitted!");
+  }
+  </script>
+
+
+
+</html>

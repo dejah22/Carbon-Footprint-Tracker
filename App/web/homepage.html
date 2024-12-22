@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page Example</title>
+	<style>
+         html *
+        {
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            font-size: 18px;
+        }
+		body {
+            background-image: url("r2.jpg");
+            background-repeat: no-repeat;
+			background-size: cover;
+			color: #000000;
+		}
+
+		nav {
+			background-color: rgba(0, 0, 0, 0.5);
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 50px;
+			z-index: 1;
+			overflow: hidden;
+		}
+		
+		nav a {
+			float: right;
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 20px;
+		}
+		
+		nav a:hover {
+			background-color: #6ae56a;
+			color: black;
+            border-bottom: 7px solid #6ae56a !important;
+            border-radius: 0px !important;
+		}
+		
+		.container {
+			margin-top: 50px;
+			padding: 20px;
+			text-align: center;
+		}
+
+        .box {
+			background-color: rgba(0, 0, 0, 0.5);
+			color: white;
+			padding: 10px;
+			margin: 80px auto;
+			width: 50%;
+            align-self: left;
+			text-align: center;
+		}
+
+        .emerge {
+        opacity: 0;
+        animation: emerge-text 2s ease forwards;
+      }
+      
+      @keyframes emerge-text {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .button-container {
+			display: flex;
+			justify-content: center;
+		}
+		
+		input[type="submit"] {
+			background-color: #000600;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+			margin-right: 10px;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #55d255;
+            color:black;
+			transition: background-color 0.3s ease-in-out;
+		}
+
+
+	</style>
+</head>
+<body>
+	<nav>
+            <a href="index.html">Back to HomePage</a>
+            <a href="home.html">Home</a>
+		<a href="travel.html">Travel</a>
+		<a href="food.html">Food</a>
+	</nav>
+	<div class="emerge">
+    <div class="box">
+
+		<b><p style="font-size: 30px;">CARBON FOOTPRINT </p></b>
+		<p>
+            What's your carbon footprint? Carbon emissions from your lifestyle choices, from transportation to diet, impact the climate. This is a global problem, but you can be a part of the solution.
+        </p>
+        <br><br>
+        <b><p style="font-size: 30px;">FIND A LOCAL CHAPTER RIGHT NOW,</p></b>
+        <p>
+            Dive into your local chapter and explore what The Nature Conservancy has been doing in your community.
+        </p>
+
+
+	</div>
+</div>
+</div>
+</body>
+</html>
