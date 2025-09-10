@@ -34,8 +34,8 @@ I also thank my friends Adithi Shankar and Aishwarya Krishnakumar for working wi
 
 ## A glance 
 <div style="text-align: center;">
-<img src="screenshots/home-page.png" alt="Home Page" width="95%"/>
-<img src="screenshots/sign-up.png" alt="Sign Up Screen" width="95%"/>
-<img src="screenshots/user-login.png" alt="Login Screen" width="95%"/>
-<img src="screenshots/food-tracker.png" alt="Entering activity" width="95%"/>
+<img src="Screenshots/home-page.png" alt="Home Page" width="90%"/>
+<img src="Screenshots/sign-up.png" alt="Sign Up Screen" width="90%"/>
+<img src="Screenshots/user-login.png" alt="Login Screen" width="90%"/>
+<img src="Screenshots/food-tracker.png" alt="Entering activity" width="90%"/>
 </div>
